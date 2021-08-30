@@ -24,8 +24,8 @@ return articulo.costo <= 500
 
 
 
-/* MAP (genera un atributo de los objetos, genera
-    un nuevo array); */
+/* MAP (crea un nuevo array con los resultados de la llamada a la funcion
+    indicada aplicados a cada uno de sus elementos); */
 
 var nombre Articulos = articulos.map(function(articulo)){
     return articulo.nombre
@@ -34,7 +34,7 @@ var nombre Articulos = articulos.map(function(articulo)){
 /* trae todos los nombres en string de los articulos que
 ya teniamos */
 
-/* FIND: (devuelve el primer valor que coincide de la HTMLFormControlsCollection, una vez
+/* FIND: (devuelve el primer valor que coincide de la condicion definida, una vez
     que coincida, no verificara los valores restantes) */
 
 var encuentraArticulo = articulos.find(function(articulo) {
@@ -45,8 +45,7 @@ articulos.forEach(function(articulo){
     console.log(articulo.nombre);
 });
 
-/* me regresa los nombres de los articulos, podemos tambien poner por 
-ejemplo que arroje el costo */
+/* Ejecuta la funcion indicada una vez por cada elemento del array*/
 
 /* SOME (regresa una validacion de V o F para articulos que la cumplan) */
 
@@ -57,9 +56,15 @@ var articulosBaratos = articulos.some(function (articulo){
 /* aqui arrojaria un true ya que existen articulos menores a 700 */
 
 
-FILTER (devuelve los valores coincidentes en una matriz de la colección. Verificará todos los valores 
-        de la colección y devolverá los valores coincidentes en una matriz.)
+/* FILTER Crea un nuevo array con los elementos del array que se pasó 
+como parámetro y que cumplan con la condición definida. */
 
+    
+ Agregar o eliminar elementos 
+/* Agregar al final= .push()
+Eliminar al final= .pop()
+Agregar al inicio= .unshift()
+Eliminar al inicio= .shift()  */
 
 
 
